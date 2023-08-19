@@ -5,6 +5,8 @@ services:
     image: tindy2013/subconverter:latest
     container_name: subconverter
     restart: always
+    expose:
+      - "25500"
     networks:
       - traefik
     labels:
